@@ -1,0 +1,83 @@
+
+.left{
+    width: 280px;
+    float: left;
+}
+#crechart{
+    border: solid 1px #AECAF0;
+    border-radius: 7px;
+    width: 280px;
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+
+.xz{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.batch{
+    background-color: White;
+    border: Solid 1px #AECAF0;
+    height: 80px;
+    width: 210px;
+    color: Black;
+    margin-top: 5px;
+}
+.batch span{
+    width: 97%;
+    float: left;
+    position: relative;
+    padding: 3px;
+}
+.batch span:hover{
+    width: 97%;
+    background-color: #FFE7A2;
+}
+.button{
+    color: #2C4D79;
+    font-size: 9pt;
+    font-family: Tahoma;
+    font-weight: normal;
+    vertical-align: middle;
+    border: solid 1px #A3C0E8;
+    background: -webkit-gradient(linear, left bottom, left top,
+    color-stop(0, #E0EDFF), color-stop(0.5,#C1DBFA ),
+    color-stop(0.51,#C1DBFA), color-stop(1, #E0EDFF));
+    width: 63px;
+    margin-top: 5px;
+    padding: 4px 0 4px 0;
+    cursor: pointer;
+}
+.selected{
+    background-color:#FFBD69 ;
+}
+
+.button:hover{
+    background:-webkit-gradient(linear,
+    left bottom, left top,color-stop(0, #FFE7A2), color-stop(0.5,#FFBD69),
+    color-stop(0.51, #FFBD69), color-stop(1, #FFE7A2));
+    border: Solid 1px #FFBD69;
+}
+.yz{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.chartname{
+    width: 200px;
+    border: solid 1px #A3C0E8;
+    border-top: 15px solid #C1DBFA;
+    margin: 5px 0 20px 20px;
+    padding: 15px 0 15px 15px;
+    border-radius: 7px;
+}
+.chartname span{
+    width: 100%;
+    overflow: hidden;
+}
+.input{
+    width:165px ;
+    border: solid 1px #A3C0E8;
+}
+.right{
+    margin-left: 285px;
+}

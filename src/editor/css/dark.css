@@ -1,0 +1,159 @@
+﻿.Outliner {
+	color: #aaa;
+	background: #555;
+	padding: 0;
+	width: 100%;
+	height: 140px;
+	font-size: 12px;
+	cursor: default;
+	overflow: auto;
+	outline: none;
+}
+
+	.Outliner .option {
+		padding: 4px;
+		white-space: nowrap;
+	}
+
+	.Outliner .option:hover {
+		background-color: rgba(21,60,94,0.5);
+	}
+
+
+	.Outliner .option.active {
+		background-color: rgba(21,60,94,1);
+	}
+
+.Panel.Collapsible.collapsed .Static .Button {
+	border-left-color: #aaa;
+}
+
+.Panel.Collapsible:not(.collapsed) .Static .Button {
+	border-top-color: #aaa;
+}
+
+input.Number {
+	color: #2A75B7!important;
+	font-size: 12px;
+	border: 0px;
+	padding: 2px;
+	cursor: col-resize;
+}
+
+#viewport {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	right: 340px;
+	bottom: 32px;
+}
+
+	#viewport #info {
+		text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+		pointer-events: none;
+	}
+
+#script {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	right: 340px;
+	bottom: 32px;
+	opacity: 0.9;
+}
+
+#player {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	right: 340px;
+	bottom: 32px;
+}
+
+#sidebar {
+	position: absolute;
+	right: 0;
+	top: 50px;
+	bottom: 0px;
+	width: 340px;
+	background-color: #444444;
+	overflow: auto;
+}
+
+	#sidebar * {
+		vertical-align: middle;
+	}
+
+	#sidebar input,
+	#sidebar textarea {
+		background: #444;
+		border: 1px solid #666;
+		color: #eee;
+	}
+
+	#sidebar input:hover,
+	#sidebar textarea:hover  {
+		background: #444;
+		border: 1px solid #3c8cbb;
+		color: #eee;
+    }
+
+
+
+	#sidebar .Panel {
+		color: #aaa;
+		padding: 10px;
+		border-top: 1px solid #555;
+	}
+
+	#sidebar .Panel.collapsed {
+		margin-bottom: 0;
+	}
+
+	#sidebar .Panel.Material canvas {
+		border: solid 1px #5A5A5A;
+	}
+
+	#sidebar .Row {
+		min-height: 20px;
+		margin-bottom: 10px;
+	}
+
+#tabs {
+	background-color: #1b1b1b;
+	border-top: 1px solid #222;
+}
+
+	#tabs span {
+		color: #555;
+		border-right: 1px solid #222;
+		padding: 10px;
+	}
+
+	#tabs span.selected {
+		color: #888;
+		background-color: #444444;
+	}
+
+#toolbar {
+	position: absolute;
+	left: 50px;
+	right: 340px;
+	bottom: 0;
+	height: 32px;
+	background-color: #444444;
+	color: #aaa;
+}
+
+	#toolbar * {
+		vertical-align: middle;
+	}
+
+	#toolbar .Panel {
+		padding: 4px;
+		color: #999;
+	}
+
+	#toolbar button {
+		margin-right: 0px;
+	}

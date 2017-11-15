@@ -1,0 +1,229 @@
+/**
+ * It may be useful to copy the below styles and use on your page
+ */
+.dataTable {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
+  font-size: 13px;
+}
+
+.dataTable table {
+  border-collapse: separate;
+  position: relative;
+  /*user-select是阻止文本复制及转载*/
+  /*1)-moz代表firefox浏览器私有属性
+    2)-ms代表IE浏览器私有属性
+    3)-webkit代表chrome，safari私有属性
+    4)-o代表opera私有属性*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  /*user-select: none;*/
+ /*设置相邻单元格的边框间的距离（仅用于“边框分离”模式）*/
+  border-spacing: 0;
+}
+
+
+.dataTable th,
+.dataTable td {
+  border-right: 1px solid #CCC;/*右边框的所有属性,边框为1px的灰色实线*/
+  border-bottom: 1px solid #CCC;
+  min-width: 70px;/*单元格的宽度（设置元素的最小宽度,元素可以比指定值宽，但不能比其窄，不允许指定负值）*/
+  height: 30px;/*单元格的高度*/
+  line-height: 16px;
+  /*单元格内容的内边距*/
+  padding: 0 4px 0 4px; /* top, bottom padding different than 0 is handled poorly by FF with HTML5 doctype，上右下左(顺时针) */
+  text-align:center;/*内容居中*/
+  
+}
+
+.dataTable div.minWidthFix {
+  width: 50px;
+}
+
+.dataTable tr:first-child th.htNoFrame,
+.dataTable th:first-child.htNoFrame,
+.dataTable th.htNoFrame {
+  border-left-width: 0;
+  background-color: white;/*单元格的背景色为白色*/
+  border-color: #FFF;/*边框为白色*/
+}
+
+
+.dataTable th:first-child,
+.dataTable td:first-child,
+.dataTable .htNoFrame + th,
+.dataTable .htNoFrame + td {
+  border-left: 1px solid #CCC;
+}
+
+.dataTable tr:first-child th,
+.dataTable tr:first-child td {
+  border-top: 1px solid #CCC;
+  
+}
+
+.dataTable thead tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.dataTable thead tr.lastChild th {
+  border-bottom-width: 0;
+}
+
+.dataTable th 
+{
+  /*background-color: #EEE;/*表格的行头列头背景色为浅灰色*/
+  background-color: #B0E0E6 ;/*表格的行头列头背景色为浅灰色*/
+  color: #222;/*字体为浅黑色*/
+  text-align: center;/*字体居中*/
+  font-weight: normal;/*字体粗细,bold粗体，bolder更粗，lighter更细，normal默认*/
+  white-space: nowrap;/*处理元素内的空白,nowrap段落中的文本不换行*/
+}
+
+.dataTable th .small {
+  font-size: 12px;/*表头字体大小*/
+}
+
+.dataTable thead th { /*表头thead，th表头的单元格，类似于td*/
+  /*padding: 2px,4px;*//*top2,right4,bottom2,left4*/
+  padding: 0px,4px,0px,4px;
+ 
+}
+
+.dataTable th.active {
+  background-color: #CCC;/*表头背景色为灰色*/
+}
+
+/* border background */
+.dataTable .htBorderBg {
+  position: absolute;
+  font-size: 0;
+}
+
+.dataTable .htBorderBg.selection {
+  background-color: #EEF4FF;
+}
+
+/* border line */
+.dataTable .htBorder {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #000;
+  font-size: 0;
+}
+
+.dataTable .htBorder.current {
+  background: #5292F7;
+  width: 2px;
+  height: 2px;
+}
+
+.dataTable .htBorder.selection {
+  background: #89AFF9;
+  width: 1px;
+  height: 1px;
+}
+
+/* fill handle */
+.dataTable .htFillHandle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #5292F7;
+  border: 1px solid #fff;
+  font-size: 0;
+  cursor: crosshair;
+}
+
+.dataTable .htBorder.htFillBorder {
+  background: red;
+  width: 1px;
+  height: 1px;
+}
+
+/* textarea border color */
+textarea.handsontableInput {
+  border: 2px solid #5292F7;
+  outline-width: 0;
+  margin: 0;
+  padding: 1px 4px 0 2px;
+  font-family: Arial, Helvetica, sans-serif; /*repeat from .dataTable (inherit doesn't work with IE<8) */
+  line-height: 1.3em;
+  font-size: 13px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+  resize: none;
+}
+
+.handsontableInputHolder.htHidden textarea.handsontableInput {
+  border-color: #5292F7;
+  background: #5292F7;
+  color: #5292F7;
+}
+
+.handsontableInputHolder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* typeahead rules. Needed only if you are using the autocomplete feature */
+.typeahead {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  float: left;
+  display: none;
+  min-width: 160px;
+  padding: 4px 0;
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  border-color: #CCC;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  margin-top: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.typeahead li {
+  line-height: 18px;
+  display: list-item;
+}
+
+.typeahead a {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.typeahead li > a:hover, .typeahead .active > a, .typeahead .active > a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #08C;
+}
+
+.typeahead a {
+  color: #08C;
+  text-decoration: none;
+}
