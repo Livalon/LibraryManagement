@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { LayoutComponent } from './components/layout/layout.component';
- import { ContentHeaderComponent } from './components/content-header/content-header.component';
+import { ContentHeaderComponent } from './components/content-header/content-header.component';
+import { LoginComponent} from './components/login/login.component';
+import { AppointmentComponent} from './components/appointment/appointment.component';
+import { BorrowInquireComponent} from './components/borrow-inquire/borrow-inquire.component';
+import { NeedBuyComponent} from './components/need-buy/need-buy.component';
+import { PaymentRecordComponent} from './components/payment-record/payment-record.component';
+import {UserInfComponent} from './components/user-inf/user-inf.component';
+
+import {ImportResolver} from "@angular/compiler";
+import { AppComponent} from "./app.component";
 // import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'layout',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -18,11 +26,37 @@ const routes: Routes = [
   {
     path: 'layout',
     component : LayoutComponent,
+    children: [
+      {
+        path: 'appointment',
+        component: AppointmentComponent
+      },
+      {
+        path: 'borrowinquire',
+        component: BorrowInquireComponent
+      },
+      {
+        path: 'needbuy',
+        component: NeedBuyComponent
+      },
+      {
+        path: 'paymentrecord',
+        component: PaymentRecordComponent
+      },
+      {
+        path: 'userinf',
+        component: UserInfComponent
+      }
+    ]
   },
   {
-    path: '**',
-    component: LayoutComponent
+    path: 'login',
+    component: LoginComponent
   }
+  // {
+  //   path: '**',
+  //   component: LayoutComponent
+  // },
 ];
 
 @NgModule({

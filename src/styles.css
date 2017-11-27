@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/*!* You can add global styles to this file, and also import other style files *!*/
+@import "bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "bower_components/font-awesome/css/font-awesome.min.css";
+@import "bower_components/Ionicons/css/ionicons.min.css";
+@import "dist/css/AdminLTE.min.css";
+@import "plugins/iCheck/flat/blue.css";
+@import "dist/css/skins/_all-skins.min.css";
+@import "bower_components/morris.js/morris.css";
+@import "bower_components/jvectormap/jquery-jvectormap.css";
+@import "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+@import "bower_components/bootstrap-daterangepicker/daterangepicker.css";
+@import "plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css";
+@import "plugins/iCheck/square/blue.css";
+@import "plugins/metisMenu/metisMenu.min.css";
+
+
