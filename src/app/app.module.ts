@@ -10,16 +10,16 @@ import { ContentHeaderComponent } from './components/content-header/content-head
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutHeaderComponent } from './components/layout-header/layout-header.component';
-import { MenuHeaderComponent } from './components/menu-header/menu-header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
-import { FileUploadModule } from 'ng2-file-upload';
+// import { FileUploadModule } from 'ng2-file-upload';
 import { LoginComponent } from './components/login/login.component';
 import { UserInfComponent } from './components/user-inf/user-inf.component';
 import { BorrowInquireComponent } from './components/borrow-inquire/borrow-inquire.component';
 import { PaymentRecordComponent } from './components/payment-record/payment-record.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { NeedBuyComponent } from './components/need-buy/need-buy.component';
+import { SearchBookComponent } from './components/search-book/search-book.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +30,13 @@ import { NeedBuyComponent } from './components/need-buy/need-buy.component';
     MainContentComponent,
     FooterComponent,
     LayoutHeaderComponent,
-    MenuHeaderComponent,
     LoginComponent,
     UserInfComponent,
     BorrowInquireComponent,
     PaymentRecordComponent,
     AppointmentComponent,
-    NeedBuyComponent
+    NeedBuyComponent,
+    SearchBookComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +45,7 @@ import { NeedBuyComponent } from './components/need-buy/need-buy.component';
     // Ng2SmartTableModule,
     AppRoutingModule,
     CommonModule,
-    FileUploadModule
+    // FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

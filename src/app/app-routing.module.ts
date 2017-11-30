@@ -8,6 +8,7 @@ import { BorrowInquireComponent} from './components/borrow-inquire/borrow-inquir
 import { NeedBuyComponent} from './components/need-buy/need-buy.component';
 import { PaymentRecordComponent} from './components/payment-record/payment-record.component';
 import {UserInfComponent} from './components/user-inf/user-inf.component';
+import { SearchBookComponent} from "./components/search-book/search-book.component";
 
 import {ImportResolver} from "@angular/compiler";
 import { AppComponent} from "./app.component";
@@ -25,17 +26,17 @@ const routes: Routes = [
   },
   {
     path: 'layout',
-    component : LayoutComponent,
-    children: [
-      {
-        path: 'appointment',
-        component: AppointmentComponent
-      },
-      {
-        path: 'borrowinquire',
-        component: BorrowInquireComponent
-      },
-      {
+        component : LayoutComponent,
+        children: [
+          {
+            path: 'appointment',
+            component: AppointmentComponent
+          },
+          {
+            path: 'borrowinquire',
+            component: BorrowInquireComponent
+          },
+          {
         path: 'needbuy',
         component: NeedBuyComponent
       },
@@ -46,7 +47,11 @@ const routes: Routes = [
       {
         path: 'userinf',
         component: UserInfComponent
-      }
+      },
+          {
+            path: 'searchbook',
+            component: SearchBookComponent
+          }
     ]
   },
   {

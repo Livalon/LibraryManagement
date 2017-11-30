@@ -12,5 +12,6 @@
 @import "plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css";
 @import "plugins/iCheck/square/blue.css";
 @import "plugins/metisMenu/metisMenu.min.css";
+@import "bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css";
 
 

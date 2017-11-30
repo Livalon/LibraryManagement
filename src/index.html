@@ -48,6 +48,11 @@
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
   <script src="plugins/iCheck/icheck.min.js"></script>
+
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+
   <!--登陆界面选择按钮-->
   <script>
     $(function () {
@@ -72,6 +77,22 @@
     });
   });
   </script>
+
+  <script>
+    $(function () {
+      $('#example1').DataTable()
+      $('#example2').DataTable({
+        'paging'      : true,
+        'lengthChange': false,
+        'searching'   : false,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : false
+      })
+    })
+  </script>
+
+
 </head>
 <!--<body class="hold-transition skin-blue sidebar-mini" style="border: 10px solid #82ff57">-->
 <!--<body class="hold-transition skin-blue sidebar-mini">-->
