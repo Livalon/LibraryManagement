@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -6,43 +6,14 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <!--<link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">-->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--&lt;!&ndash;[if lt IE 9]>-->
-  <script src="plugins/html5shiv_respond/html5shiv.min.js"></script>
-  <script src="plugins/html5shiv_respond/respond.min.js"></script>
-
-  <!-- jQuery 3 -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
   <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="plugins/html5shiv_respond/html5shiv.min.js"></script>
+  <script src="plugins/html5shiv_respond/respond.min.js"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
     $.widget.bridge('uibutton', $.ui.button);
@@ -50,8 +21,8 @@
   <!-- Bootstrap 3.3.7 -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Morris.js charts -->
-  <script src="bower_components/raphael/raphael.min.js"></script>
-  <script src="bower_components/morris.js/morris.min.js"></script>
+  <!--<script src="bower_components/raphael/raphael.min.js"></script>-->
+  <!--<script src="bower_components/morris.js/morris.min.js"></script>-->
   <!-- Sparkline -->
   <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
   <!-- jvectormap -->
@@ -60,7 +31,7 @@
   <!-- jQuery Knob Chart -->
   <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
   <!-- daterangepicker -->
-  <script src="bower_components/moment/min/moment.min.js"></script>
+  <!--<script src="bower_components/moment/min/moment.min.js"></script>-->
   <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
   <!-- datepicker -->
   <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
@@ -73,95 +44,59 @@
   <!-- AdminLTE App -->
   <script src="dist/js/adminlte.min.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard.js"></script>
+  <!--<script src="dist/js/pages/dashboard.js"></script>-->
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
-  <script type="text/javascript" src="static/js/jquery.json.min.js"></script>
-  <script src="editor/libs/three.js"></script>
-  <!--<script src="editor/libs/threecsg.js"></script>-->
-  <script src="editor/libs/system.min.js"></script>
-  <script src="editor/js/controls/EditorControls.js"></script>
-  <link rel="stylesheet" href="editor/libs/codemirror/codemirror.css">
-  <link rel="stylesheet" href="editor/libs/codemirror/theme/monokai.css">
-  <script src="editor/libs/codemirror/codemirror.js"></script>
-  <script src="editor/libs/codemirror/mode/javascript.js"></script>
-  <script src="editor/libs/esprima.js"></script>
-  <script src="editor/libs/jsonlint.js"></script>
-  <script src="editor/libs/glslprep.min.js"></script>
-  <script src="editor/libs/codemirror/mode/glsl.js"></script>
-  <script src="editor/libs/codemirror/addon/dialog.js"></script>
-  <script src="editor/libs/codemirror/addon/show-hint.js"></script>
-  <script src="editor/libs/codemirror/addon/tern.js"></script>
-  <script src="editor/libs/acorn/acorn.js"></script>
-  <script src="editor/libs/acorn/acorn_loose.js"></script>
-  <script src="editor/libs/acorn/walk.js"></script>
-  <script src="editor/libs/ternjs/polyfill.js"></script>
-  <script src="editor/libs/ternjs/signal.js"></script>
-  <script src="editor/libs/ternjs/tern.js"></script>
-  <script src="editor/libs/ternjs/def.js"></script>
-  <script src="editor/libs/ternjs/comment.js"></script>
-  <script src="editor/libs/ternjs/infer.js"></script>
-  <script src="editor/libs/ternjs/doc_comment.js"></script>
-  <script src="editor/libs/tern-threejs/threejs.js"></script>
-  <script src="editor/libs/signals.min.js"></script>
-  <script src="editor/libs/ui.js"></script>
-  <script src="editor/libs/ui.three.js"></script>
-  <script src="editor/libs/app.js"></script>
-  <script src="editor/js/Player.js"></script>
-  <script src="editor/js/Script.js"></script>
-  <script src="editor/js/Storage.js"></script>
-  <script src="editor/js/Editor.js"></script>
-  <script src="editor/js/Config.js"></script>
-  <script src="editor/js/History.js"></script>
-  <script src="editor/js/Loader.js"></script>
-  <script src="editor/js/pull.js"></script>
-  <!--<script src="/editor/js/Ajax.js"></script>-->
-  <script src="editor/js/Sidebar.js"></script>
-  <script src="editor/js/Sidebar.Batch.js"></script>
-  <script src="editor/js/Sidebar.Loader.js"></script>
-  <script src="editor/js/Sidebar.Block.js"></script>
-  <script src="editor/js/Sidebar.KDF.js"></script>
-  <script src="editor/js/Sidebar.KLG.js"></script>
-  <script src="editor/js/Sidebar.Level.js"></script>
-  <script src="editor/js/Sidebar.Material.js"></script>
-  <script src="editor/js/Sidebar.MathObject.js"></script>
-  <script src="editor/js/Sidebar.Menu.js"></script>
-  <script src="editor/js/Sidebar.Mineral.js"></script>
-  <script src="editor/js/Sidebar.Object3D.js"></script>
-  <script src="editor/js/Sidebar.Operation.js"></script>
-  <script src="editor/js/Sidebar.Renderer.js"></script>
-  <script src="editor/js/Sidebar.Scene.js"></script>
-  <script src="editor/js/Sidebar.AreaAndUnit.js"></script>
-  <script src="editor/js/Sidebar.Importer.js"></script>
-  <script src="editor/js/Project.js"></script>
-  <script src="editor/js/Toolbar.js"></script>
-  <script src="editor/js/Viewport.js"></script>
-  <script src="editor/js/Viewport.Info.js"></script>
-  <script src="editor/js/Command.js"></script>
-  <script src="editor/js/commands/RemoveObjectCommand.js"></script>
-  <script src="editor/js/commands/MoveObjectCommand.js"></script>
-  <script src="editor/js/commands/SetPositionCommand.js"></script>
-  <script src="editor/js/commands/SetRotationCommand.js"></script>
-  <script src="editor/js/commands/SetScaleCommand.js"></script>
-  <script src="editor/js/commands/SetValueCommand.js"></script>
-  <script src="editor/js/commands/SetUuidCommand.js"></script>
-  <script src="editor/js/commands/SetColorCommand.js"></script>
-  <script src="editor/js/commands/SetGeometryCommand.js"></script>
-  <script src="editor/js/commands/SetGeometryValueCommand.js"></script>
-  <script src="editor/js/commands/MultiCmdsCommand.js"></script>
-  <script src="editor/js/commands/AddScriptCommand.js"></script>
-  <script src="editor/js/commands/RemoveScriptCommand.js"></script>
-  <script src="editor/js/commands/SetScriptValueCommand.js"></script>
-  <script src="editor/js/commands/SetMaterialCommand.js"></script>
-  <script src="editor/js/commands/SetMaterialValueCommand.js"></script>
-  <script src="editor/js/commands/SetMaterialColorCommand.js"></script>
-  <script src="editor/js/commands/SetMaterialMapCommand.js"></script>
-  <script src="editor/js/commands/SetSceneCommand.js"></script>
-  <!--<![endif]&ndash;&gt;-->
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="plugins/iCheck/icheck.min.js"></script>
+
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+
+  <!--登陆界面选择按钮-->
+  <script>
+    $(function () {
+      $('input').iCheck({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue',
+        increaseArea: '20%' // optional
+      });
+    });
+  </script>
+
+
+
+
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script>
+    $(document).ready(function(c) {
+    $('.close').on('click', function(c){
+      $('.login-form').fadeOut('slow', function(c){
+        $('.login-form').remove();
+      });
+    });
+  });
+  </script>
+
+  <script>
+    $(function () {
+      $('#example1').DataTable()
+      $('#example2').DataTable({
+        'paging'      : true,
+        'lengthChange': false,
+        'searching'   : false,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : false
+      })
+    })
+  </script>
+
+
 </head>
+<!--<body class="hold-transition skin-blue sidebar-mini" style="border: 10px solid #82ff57">-->
+<!--<body class="hold-transition skin-blue sidebar-mini">-->
 <body>
-  <app-root>正在努力加载中...请用户老爷们稍等</app-root>
+   <app-root>书中自有黄金屋，书中自有颜如玉</app-root>
 </body>
 </html>

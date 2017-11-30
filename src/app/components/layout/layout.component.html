@@ -1,16 +1,16 @@
-<body class="hold-transition skin-blue sidebar-mini">
+<div class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <!--背景头-->
   <app-layout-header></app-layout-header>
-  <!--菜单头-->
-  <app-menu-header></app-menu-header>
+  <!--左侧菜单-->
+  <app-menu></app-menu>
   <div class="content-wrapper">
     <!--内容头-->
     <app-content-header></app-content-header>
     <!--内容-->
-    <app-main-content></app-main-content>
+    <router-outlet></router-outlet>
   </div>
   <!--底部-->
   <app-footer></app-footer>
 </div>
-</body>
+</div>
