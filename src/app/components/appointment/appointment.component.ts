@@ -11,5 +11,9 @@ export class AppointmentComponent implements OnInit {
 
   ngOnInit() {
   }
+private cancel() {
+
+    alert('取消预约成功');
+  }
 
 }
