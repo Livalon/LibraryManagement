@@ -20,6 +20,7 @@ import { PaymentRecordComponent } from './components/payment-record/payment-reco
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { NeedBuyComponent } from './components/need-buy/need-buy.component';
 import { SearchBookComponent } from './components/search-book/search-book.component';
+import { BookDetailComponent } from './components/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SearchBookComponent } from './components/search-book/search-book.compon
     PaymentRecordComponent,
     AppointmentComponent,
     NeedBuyComponent,
-    SearchBookComponent
+    SearchBookComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,

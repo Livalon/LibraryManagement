@@ -1,0 +1,141 @@
+<div class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <!--背景头-->
+    <app-layout-header></app-layout-header>
+    <!--左侧菜单-->
+    <app-menu></app-menu>
+    <div class="content-wrapper">
+      <!--内容头-->
+      <app-content-header></app-content-header>
+      <!--内容-->
+      <!----------------------------------------------------------此处往下为正文----------------------------------------------------->
+      <table id="contentDiv" style="font-size: 14px">
+        <!-------上部为书的详细信息------->
+        <div id="topDiv">
+          <!---------左边为书的图片------->
+          <div id="leftDiv">
+            <div style="padding-top: 10%">
+              <img class="bookCover_img"  src="images/angular.jpg" style="margin-left: 10%">
+            </div>
+            <div><button  class="appointButton" (click)="appointBook()" value="bookID">预约该书</button></div>
+
+          </div>
+          <!---------右边为书的信息行----->
+          <div id="rightDiv">
+            <table id="bookInfoTable">
+              <tbody>
+              <tr>
+                <td colspan="2">
+                  <h2>Angular权威教程</h2>
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">ISBN：</div>
+                </td>
+                <td class="rightTD">978-7-115-45158-3 价格： CNY109.00
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">语种：</div>
+                </td>
+                <td class="rightTD">汉语
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">作者：</div>
+                </td>
+                <td class="rightTD">
+                  (美) Ari Lerner ... [等] 著 , Nice Angular社区译
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">版次：</div>
+                </td>
+                <td class="rightTD">
+                  第2版
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">出版发行：</div>
+                </td>
+                <td class="rightTD">
+                  出版地： 北京     出版社： 人民邮电出版社      出版日期： 2017
+                </td>
+              </tr>
+              <tr>
+                <td class="leftTD">
+                  <div align="left">摘要：</div>
+                </td>
+                <td class="rightTD">
+                  本书堪称Angular领域的里程碑式著作，涵盖了关于Angular的几乎所有内容。对于没有经验的人，本书平实、通俗的讲解，递进、严密的组织，可以让人毫无压力地登堂入室，迅速领悟新一代Web应用开发的精髓。如果你有相关经验，那本书对Angular概念和技术细节的全面剖析，以及引人入胜、切中肯綮的讲解，将帮助你彻底掌握这个框架，在自己职业技术修炼之路上更进一步。
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!------下部为书的馆藏信息----------->
+        <div id="contentTable">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="box">
+                  <div class="box-header"> <h3 class="box-title">当前此图书的馆藏信息：</h3></div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                      <thead>
+                      <tr>
+                        <th>索书号</th>
+                        <th>条码号</th>
+                        <th>馆藏状态</th>
+                        <th>应还时间</th>
+                        <th>借阅次数</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>TP312/L7-1</td>
+                        <td>TD002488164</td>
+                        <td>在馆</td>
+                        <td></td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>TP312/L7-1</td>
+                        <td>TD002488165</td>
+                        <td>借出</td>
+                        <td>2017-12-30</td>
+                        <td>2</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+              </div>
+            </div>
+        </div>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+      <!----------------------------------------------------------此处往上为正文----------------------------------------------------->
+    </div>
+    <!--底部-->
+    <app-footer></app-footer>
+  </div>
+</div>

@@ -13,6 +13,7 @@ import { SearchBookComponent} from "./components/search-book/search-book.compone
 import {ImportResolver} from "@angular/compiler";
 import { AppComponent} from "./app.component";
 // import { FooterComponent } from './components/footer/footer.component';
+import {BookDetailComponent} from "./components/book-detail/book-detail.component";
 
 const routes: Routes = [
   {
@@ -50,13 +51,18 @@ const routes: Routes = [
       },
           {
             path: 'searchbook',
-            component: SearchBookComponent
+            component: SearchBookComponent,
+
           }
     ]
   },
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'bookdetail',
+    component: BookDetailComponent
   }
   // {
   //   path: '**',

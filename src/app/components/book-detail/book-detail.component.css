@@ -1,0 +1,50 @@
+#contentDiv {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  background: #FFFFFF;
+  margin: 10px auto;
+  float: left;
+}
+#leftDiv {
+  float: left;
+  width: 20%;
+  margin-left: 10px;
+}
+
+#leftDiv .bookCover_img{
+  border:none;
+  width: 160px;
+  height:210px;
+  left: 15%;
+  box-shadow:1px 1px 5px #333333;
+}
+#leftDiv .appointButton{
+  margin-top: 10px;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+#rightDiv {
+  float: right;
+  width: 75%;
+  margin-bottom: 15px;
+}
+#bookInfoTable {
+  width: 100%;
+  font-size: 11pt;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+#bookInfoTable .leftTD {
+  width: 15%;
+}
+#bookInfoTable .rightTD {
+  border-bottom: 1px solid #ccc;
+}
