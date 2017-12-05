@@ -11,7 +11,7 @@ export class BookDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-  private ppointBook() {
+  private appointBook() {
 
     alert('预约此图书成功');
   }
